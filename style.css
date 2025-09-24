@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-item img:hover{
+  transform: scale(1.2);
+}
+footer{
+    background-color: rgb(220, 219, 219);
+}
+footer button.active{
+   text-decoration: underline;
+   text-underline-offset: 5px;
+}
+.nav-pills .nav-link.active {
+    color: black !important;
+    background-color: transparent !important;
+}
+div.navHover:hover{
+  background-color: rgb(240, 237, 237);
+  border-radius: 9999px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+ul .navlink:link{
+  color: black;
+  text-decoration: none;
+}
+ul .navlink:hover{
+  text-decoration: underline;
+}
+ul .navlink:visited{
+  color: black;
+}
+.card a:hover i{
+  transform: translateY(-2px);
+}
+.footer-Icon .Icons{
+  height: 30px; width: 30px;
+  border-radius: 50%;
+  background-color: rgb(220, 219, 219);
+}
+div.Icons{
+  text-align: center;
+}
+.footer-Icon div:hover{
+  background-color: rgb(198, 195, 195) ;
+}

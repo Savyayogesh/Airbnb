@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles.css">
+
+    <title>Airbnb</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="https://www.logo.wine/a/logo/Airbnb/Airbnb-Logo.wine.svg" alt=""
+                    width="150" height="60"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item mx-3">
+                        <a class="nav-link active" aria-current="page" href="#"><img src="./assets/home.png" width="50"
+                                height="50" class="me-3" alt="">Homes</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#"><img src="./assets/parachue.png" alt="" width="50"
+                                height="50"><span
+                                class="top-0 ms-3 start-100 translate-middle badge rounded-pill bg-primary">New</span>Experiences</a>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <a class="nav-link" href="#"><img src="./assets/bell.png" alt="" width="50" height="50"><span
+                                class="top-0 ms-3 start-100 translate-middle badge rounded-pill bg-primary">New</span>Services</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-secondary border-0 me-2 ms-auto" type="button">Become a host</button>
+                <div class="me-5 d-flex">
+                    <div class="rounded-circle mx-2"
+                        style="height: 50px; width: 50px; background-color: rgb(222, 220, 220) ;">
+                        <a href="#"><i class="fa-solid fa-globe mx-3 rounded-circle text-black py-3"></i></a>
+                    </div>
+                    <div class="rounded-circle"
+                        style="height: 50px; width: 50px;background-color: rgb(222, 220, 220) ;">
+                        <a href="#"><i class="fa-solid fa-bars mx-3 rounded-circle text-black py-3"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <nav class="navbar navbar-expand-lg navbar-light ms-auto bg-light pb-3">
+        <div class="container bg-white p-0" style="border-radius: 9999px; max-width: 900px;">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                <form class="d-flex">
+                    <div class="navHover px-3 py-2">
+                        <a href="#"></a>
+                        <label class="mb-0">Where<input class="form-control me-2 p-0" type="search"
+                                placeholder="Search Destination"
+                                style="border: none; background-color: transparent;"></label></a>
+                    </div>
+                    <div class="vr mx-2 my-2"></div>
+                    <div class="navHover px-3 py-2">
+                        <label class="mb-0">Check in<input class="form-control me-2 p-0" type="text"
+                                placeholder="Add Dates" style="border: none; background-color: transparent;"></label>
+                    </div>
+                    <div class="vr mx-2 my-2"></div>
+                    <div class="navHover px-3 py-2">
+                        <label class="mb-0">Check out<input class="form-control me-2 p-0" type="text"
+                                placeholder="Add Dates" style="border: none; background-color: transparent;"></label>
+                    </div>
+                    <div class="vr mx-2 my-2"></div>
+                    <div class="navHover px-3 py-2 d-flex">
+                        <label class="mb-0">Who<input class="form-control me-2 p-0 mb-0" type="text"
+                                placeholder="Add Guest" style="border: none; background-color: transparent;"></label>
+                        <div class="rounded-circle bg-danger" style="height: 50px; width: 50px;">
+                            <a href="#"><i class="fas fa-search mx-3 rounded-circle text-white py-3"></i></a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- cards -->
+    <h2 class="text-dark py-3" style="margin-left: 10%;">Popular homes in Pune</h2>
+    <div class=" container mx-auto row row-cols-1 row-cols-md-4 g-4">
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-913354713293847677/original/d94d3e26-ac40-4141-b6c2-7af9380ac81c.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹2,282 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1128032972995295659/original/3efa4c23-9697-493f-94b4-264cce08cb64.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹7,075 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM0MTAxMjA2NjgxNTM5MDAyMg%3D%3D/original/a6e88fad-cb3f-4e53-932c-1593d2d50059.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Apartment in Varca</h5></a>
+                    <p class="card-text">₹7,073 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI1OTE4NTQyNzIzODkyNTQ2Nw%3D%3D/original/8ebaa825-cf86-4b98-b246-5d47772e75ac.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Flat in Dabolim</h5></a>
+                    <p class="card-text">₹6,162 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-913354713293847677/original/d94d3e26-ac40-4141-b6c2-7af9380ac81c.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹2,282 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1128032972995295659/original/3efa4c23-9697-493f-94b4-264cce08cb64.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹7,075 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM0MTAxMjA2NjgxNTM5MDAyMg%3D%3D/original/a6e88fad-cb3f-4e53-932c-1593d2d50059.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Apartment in Varca</h5></a>
+                    <p class="card-text">₹7,073 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI1OTE4NTQyNzIzODkyNTQ2Nw%3D%3D/original/8ebaa825-cf86-4b98-b246-5d47772e75ac.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Flat in Dabolim</h5></a>
+                    <p class="card-text">₹6,162 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-913354713293847677/original/d94d3e26-ac40-4141-b6c2-7af9380ac81c.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹2,282 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1128032972995295659/original/3efa4c23-9697-493f-94b4-264cce08cb64.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹7,075 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM0MTAxMjA2NjgxNTM5MDAyMg%3D%3D/original/a6e88fad-cb3f-4e53-932c-1593d2d50059.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Apartment in Varca</h5></a>
+                    <p class="card-text">₹7,073 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI1OTE4NTQyNzIzODkyNTQ2Nw%3D%3D/original/8ebaa825-cf86-4b98-b246-5d47772e75ac.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Flat in Dabolim</h5></a>
+                    <p class="card-text">₹6,162 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-913354713293847677/original/d94d3e26-ac40-4141-b6c2-7af9380ac81c.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹2,282 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/miso/Hosting-1128032972995295659/original/3efa4c23-9697-493f-94b4-264cce08cb64.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Guest house in Majorda</h5></a>
+                    <p class="card-text">₹7,075 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTM0MTAxMjA2NjgxNTM5MDAyMg%3D%3D/original/a6e88fad-cb3f-4e53-932c-1593d2d50059.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Apartment in Varca</h5></a>
+                    <p class="card-text">₹7,073 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card position-relative">
+                <div class="d-flex position-absolute  m-2">
+                    <a href=""><button class="rounded-pill border border-light px-2">Guest favourite</button></a>
+                    <a href=""><i class="fa-solid fa-heart fs-4 ms-5 ps-5 text-light"></i></a>
+                </div>
+                <a href=""><img src="https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTI1OTE4NTQyNzIzODkyNTQ2Nw%3D%3D/original/8ebaa825-cf86-4b98-b246-5d47772e75ac.jpeg?im_w=1200"
+                    class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                    <a href="" class="text-dark text-decoration-none"><h5 class="card-title">Flat in Dabolim</h5></a>
+                    <p class="card-text">₹6,162 for 2 nights</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <h2 class="pt-5 ms-5 ps-5">Inspiration for future getaways</h2>
+        <ul class="nav nav-pills mb-3 ms-5" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active ms-5" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">Unique stays</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link ms-5" id="pills-profile-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                    aria-selected="false">Categories</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="container">
+                    <div class="row align-items-start">
+                        <div class="col">
+                            <h6>Yurt Rentals</h6>
+                            <p>United States</p>
+                            <h6>Farm Houses</h6>
+                            <p>United States</p>
+                            <h6>Cottage Rentals</h6>
+                            <p>United States</p>
+                        </div>
+                        <div class="col">
+                            <h6>Yurt Rentals</h6>
+                            <p>United Kingdom</p>
+                            <h6>Farm Cottages</h6>
+                            <p>United Kingdom</p>
+                            <h6>Holiday Cottages</h6>
+                            <p>United Kingdom</p>
+                        </div>
+                        <div class="col">
+                            <h6>Castle Rentals</h6>
+                            <p>United States</p>
+                            <h6>Cabin Rentals</h6>
+                            <p>Australia</p>
+                            <h6>Mansion Rentals</h6>
+                            <p>United States</p>
+                        </div>
+                        <div class="col">
+                            <h6>Houseboats</h6>
+                            <p>United Kingdom</p>
+                            <h6>Luxury Cabins</h6>
+                            <p>United Kingdom</p>
+                            <h6>Villa Rentals</h6>
+                            <p>United Kingdom</p>
+                        </div>
+                        <div class="col">
+                            <h6>Holiday Caravans</h6>
+                            <p>United Kingdom</p>
+                            <h6>Luxury Cabins</h6>
+                            <p>United Kingdom</p>
+                            <h6>Holiday Bungalows</h6>
+                            <p>United Kingdom</p>
+                        </div>
+                        <div class="col">
+                            <h6>Private Island Rentals</h6>
+                            <p>United States</p>
+                            <h6>Holiday Chalets</h6>
+                            <p>United Kingdom</p>
+                            <h6>Show more</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="container">
+                    <div class="row align-items-start md-6 g-4">
+                        <div class="col">
+                            <h6>Amazing pools</h6>
+                            <h6>Countryside</h6>
+                            <h6>OMG!</h6>
+                        </div>
+                        <div class="col">
+                            <h6>Arctic</h6>
+                            <h6>Design</h6>
+                            <h6>Tiny homes</h6>
+                        </div>
+                        <div class="col">
+                            <h6>Camping</h6>
+                            <h6>Earth homes</h6>
+                            <h6>Towers</h6>
+                        </div>
+                        <div class="col">
+                            <h6>Camper vans</h6>
+                            <h6>Farms</h6>
+                            <h6>Windmills</h6>
+                        </div>
+                        <div class="col">
+                            <h6>Castles</h6>
+                            <h6>National parks</h6>
+                            <h6>Luxe</h6>
+                        </div>
+                        <div class="col">
+                            <h6>Containers</h6>
+                            <h6>Vineyards</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <div class="row align-items-start">
+                <div class="col">
+                    <h6>Support</h6>
+                    <p>Help Centre</p>
+                    <p>AirCover</p>
+                    <p>Anti-discrimination</p>
+                    <p>Disability support</p>
+                    <p>Cancellation options</p>
+                    <p>Report neighbourhood concern</p>
+                </div>
+                <div class="col">
+                    <h6>Hosting</h6>
+                    <p>Airbnb your home</p>
+                    <p>AirCover for Hosts</p>
+                    <p>Anti-discrimination</p>
+                    <p>Hosting resources</p>
+                    <p>Community forum</p>
+                    <p>Join a free Hosting class</p>
+                    <p>Find a co‑host</p>
+                </div>
+                <div class="col">
+                    <h6>Airbnb</h6>
+                    <p>2025 Summer Release</p>
+                    <p>Newsroom</p>
+                    <p>New features</p>
+                    <p>Careers</p>
+                    <p>Investors</p>
+                    <p>Airbnb.org emergency stays</p>
+                </div>
+            </div>
+        </div>
+        <hr class="ms-5 me-5">
+        <div class="d-flex flex-wrap ms-5">
+            <p>&copy;2025 Airbnb, Inc.</p>
+            <ul class="d-flex ">
+                <a href="" class="navlink">
+                    <li class="mx-3">Privacy</li>
+                </a>
+                <a href="" class="navlink">
+                    <li class="mx-3">Terms</li>
+                </a>
+                <a href="" class="navlink">
+                    <li class="mx-3">Sitemap</li>
+                </a>
+                <a href="" class="navlink">
+                    <li class="mx-3"> Company details</li>
+                </a>
+            </ul>
+            <div class=" footer-Icon ms-auto me-5 d-flex">
+                <div>
+                    <a href="" class="text-black" style="text-decoration-line: none;"><span class="text-black"><i
+                                class="fa-solid fa-globe text-black me-2"></i>English(IN)</span></a>
+                </div>
+                <div>
+                    <a href="" class="text-black" style="text-decoration-line: none;"><span class="text-black mx-3"><i
+                                class="fa-solid fa-indian-rupee-sign me-2"></i>INR</span></a>
+                </div>
+                <div class="Icons">
+                    <a href=""><i class="fa-brands fa-facebook text-black"></i></a>
+                </div>
+                <div class="Icons">
+                    <a href=""><i class="fa-brands fa-square-x-twitter text-black"></i></a>
+                </div>
+                <div class="Icons">
+                    <a href=""><i class="fa-brands fa-instagram text-black bg-light rounded-circle"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
